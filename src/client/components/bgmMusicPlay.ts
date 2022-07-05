@@ -49,7 +49,7 @@ export const player = reactive({
   isMute: false,
   isFault: false,
   floatPosition: BGM_MUSIC_PLAYER.floatPosition,
-  floatStyle: BGM_MUSIC_PLAYER.floatStyle !,
+  floatStyle: BGM_MUSIC_PLAYER.floatStyle,
   autoShrink: BGM_MUSIC_PLAYER.autoShrink,
   shrinkMode: BGM_MUSIC_PLAYER.shrinkMode,
   color: BGM_MUSIC_PLAYER.color

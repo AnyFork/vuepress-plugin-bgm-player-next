@@ -1,6 +1,6 @@
 {
   "name": "@anyfork/vuepress-plugin-bgm-player-next",
-  "version": "0.0.1",
+  "version": "0.1.0-beta.2",
   "description": "bgm player plugin for vuepress v2.x",
   "main": "lib/node/index.js",
   "types": "lib/node/index.d.ts",
@@ -8,17 +8,17 @@
     "lib"
   ],
   "scripts": {
-    "prepare": "npm run build",
+    "prepare": "npm run clean & npm run build",
     "clean": "rimraf lib *.tsbuildinfo",
-    "build": "tsc -b tsconfig.build.json",
-    "copy": "cpx \"src/**/*.{d.ts,vue,scss,css,eof,svg,ttf,woff,js,styl}\" lib"
+    "build": "tsc -b tsconfig.build.json & npm run copy",
+    "copy": "cpx \"src/**/*.{d.ts,vue,css,eof,svg,ttf,woff,js}\" lib"
   },
   "license": "MIT",
-  "author": "foxre",
-  "homepage": "https://github.com/rqh656418510/vuepress-plugin-baidu-seo-next",
+  "author": "anyfork",
+  "homepage": "https://github.com/AnyFork/vuepress-plugin-bgm-player-next.git",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rqh656418510/vuepress-plugin-baidu-seo-next.git"
+    "url": "git+https://github.com/AnyFork/vuepress-plugin-bgm-player-next.git"
   },
   "publishConfig": {
     "access": "public"
@@ -46,7 +46,6 @@
   "dependencies": {
     "@vuepress/client": "^2.0.0-beta.48",
     "@vuepress/core": "^2.0.0-beta.48",
-    "@vuepress/utils": "^2.0.0-beta.48",
-    "vue": "3.2.36"
+    "@vuepress/utils": "^2.0.0-beta.48"
   }
 }

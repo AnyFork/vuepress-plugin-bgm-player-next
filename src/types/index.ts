@@ -11,7 +11,7 @@ export interface AudioOption {
 }
 export interface BgmMusicPlayerOptions {
   //播放器位置
-  position?: object
+  position?: any
   //播放器音乐
   audios: Array<AudioOption>
   //自动播放
@@ -23,7 +23,7 @@ export interface BgmMusicPlayerOptions {
   //悬浮位置
   floatPosition?: string
   //悬浮样式
-  floatStyle?: object
+  floatStyle?: any
   //播放器主题颜色
   color?: string
 }
